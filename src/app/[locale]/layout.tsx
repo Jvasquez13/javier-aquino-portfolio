@@ -20,9 +20,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) return {};
   const { meta } = dictionaries[locale];
   return {
+    metadataBase: new URL("https://javieraquino.com"),
     title: meta.title,
     description: meta.description,
-    alternates: { languages: { es: "/es", en: "/en" } },
+    alternates: { canonical: `/${locale}`, languages: { es: "/es", en: "/en" } },
+    openGraph: {
+      type: "website",
+      url: `/${locale}`,
+      title: meta.title,
+      description: meta.description,
+      locale: locale === "es" ? "es_DO" : "en_US",
+    },
+    twitter: { card: "summary_large_image", title: meta.title, description: meta.description },
   };
 }
 
