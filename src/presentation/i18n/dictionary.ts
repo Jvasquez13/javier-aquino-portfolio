@@ -11,7 +11,7 @@ export interface Dictionary {
   nav: { about: string; projects: string; experience: string; skills: string; education: string; contact: string };
   hero: { status: string; viewProjects: string; viewExperience: string; contactMe: string; toolsLabel: string };
   about: { title: string; portraitAlt: (name: string) => string; location: string; availability: string; languages: string };
-  projects: { title: string; note: (published: number, total: number) => string; status: Record<ProjectStatus, string>; viewCode: string };
+  projects: { title: string; note: (published: number, total: number) => string; status: Record<ProjectStatus, string>; viewCode: string; viewReport: string };
   experience: { title: string };
   skills: { title: string };
   education: { title: string; studies: string; certifications: string };
@@ -67,6 +67,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
           : `${published} de ${total} publicados. Los demás son proyectos personales de práctica que estoy construyendo.`,
       status: { pass: "Publicado", skip: "En construcción", fail: "Descartado" },
       viewCode: "Ver código",
+      viewReport: "Ver reporte",
     },
     experience: { title: "Experiencia" },
     skills: { title: "Habilidades" },
@@ -130,6 +131,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
           : `${published} of ${total} published. The rest are personal practice projects I'm building.`,
       status: { pass: "Published", skip: "In progress", fail: "Dropped" },
       viewCode: "View code",
+      viewReport: "View report",
     },
     experience: { title: "Experience" },
     skills: { title: "Skills" },

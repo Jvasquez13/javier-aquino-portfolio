@@ -8,4 +8,6 @@ export interface Project {
   /** pass = published and working, skip = planned or in progress, fail = abandoned */
   readonly status: ProjectStatus;
   readonly repoUrl?: string;
+  /** Public test report, when the project's pipeline publishes one. */
+  readonly reportUrl?: string;
 }

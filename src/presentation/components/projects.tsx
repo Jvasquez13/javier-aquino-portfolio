@@ -23,9 +23,10 @@ export function Projects({
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <ToolList items={project.stack} />
-            {project.repoUrl && (
+            {(project.repoUrl || project.reportUrl) && (
               <p className="card-link">
-                <a href={project.repoUrl}>{t.viewCode}</a>
+                {project.repoUrl && <a href={project.repoUrl}>{t.viewCode}</a>}
+                {project.reportUrl && <a href={project.reportUrl}>{t.viewReport}</a>}
               </p>
             )}
           </li>

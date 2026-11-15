@@ -61,9 +61,11 @@ export const portfolioEs: Portfolio = {
       id: "karate-api",
       title: "Suite de pruebas de API con Karate",
       description:
-        "Lectura, creación y casos negativos sobre una API pública, con datos de prueba aislados y reporte HTML de resultados.",
-      stack: ["Karate", "Java", "Maven"],
-      status: "skip",
+        "CRUD de reservas contra una API pública: token compartido, validación de esquema, escenarios positivos y negativos con etiquetas, y un reporte de Allure publicado por el CI.",
+      stack: ["Karate", "Java", "Maven", "GitHub Actions", "Allure"],
+      status: "pass",
+      repoUrl: "https://github.com/Jvasquez13/karate-api-automation",
+      reportUrl: "https://jvasquez13.github.io/karate-api-automation/",
     },
     {
       id: "playwright-e2e",

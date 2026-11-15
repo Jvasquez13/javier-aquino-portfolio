@@ -6,6 +6,7 @@ describe("iconFor", () => {
   it.each([
     ["Docker", "docker"],
     ["Bruno", "bruno"],
+    ["GitHub Actions", "githubactions"],
     ["Docker Compose", "docker"],
     ["Jenkins", "jenkins"],
     ["Appium", "appium"],

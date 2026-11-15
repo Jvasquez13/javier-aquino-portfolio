@@ -73,6 +73,12 @@ describe.each(LOCALES)("portfolio content (%s)", (locale) => {
     const publishedWithoutRepo = projects.filter((p) => p.status === "pass" && !p.repoUrl);
     expect(publishedWithoutRepo.map((p) => p.id)).toEqual([]);
   });
+
+  it("only links to secure addresses", async () => {
+    const { projects } = await load(locale);
+    const links = projects.flatMap((p) => [p.repoUrl, p.reportUrl]).filter((url): url is string => Boolean(url));
+    expect(links.filter((url) => !url.startsWith("https://"))).toEqual([]);
+  });
 });
 
 describe("translations stay in sync", () => {
