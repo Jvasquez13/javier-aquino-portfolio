@@ -18,7 +18,7 @@ export const portfolioEn: Portfolio = {
     ],
     location: "Santo Domingo, Dominican Republic",
     availability: "Remote, on UTC-4 with a full workday of overlap with U.S. Eastern time.",
-    email: "JavierAquinoV1@gmail.com",
+    email: "contacto@javieraquino.com",
     links: [
       { label: "LinkedIn", url: "https://www.linkedin.com/in/javieraquinov1/" },
       { label: "GitHub", url: "https://github.com/Jvasquez13" },
