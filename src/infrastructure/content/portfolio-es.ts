@@ -234,7 +234,7 @@ export const portfolioEs: Portfolio = {
       end: null,
       notes: [
         "Graduación prevista en diciembre de 2026.",
-        "Segundo lugar en Challenge Popular 2024, competencia nacional de innovación: coconstruí un asistente financiero con IA que recomienda inversiones de forma automática.",
+        "Segundo lugar en Challenge Popular 2024, competencia nacional de innovación: desarrollé en equipo un asistente financiero con IA que recomienda inversiones de forma automática.",
       ],
     },
     {
