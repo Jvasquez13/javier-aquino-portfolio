@@ -8,6 +8,7 @@ describe("iconFor", () => {
     ["Docker Compose", "docker"],
     ["Jenkins", "jenkins"],
     ["Appium", "appium"],
+    ["Claude", "claude"],
     ["WebDriverIO", "webdriverio"],
     ["BDD (Gherkin)", "cucumber"],
     ["K6", "k6"],
@@ -21,7 +22,7 @@ describe("iconFor", () => {
     expect(iconFor(name)?.slug).toBe(slug);
   });
 
-  it.each(["Karate", "Playwright", "SQL", "Agile / Scrum", "CI/CD", "Core bancario"])(
+  it.each(["Karate", "Playwright", "Codex", "SQL", "Agile / Scrum", "CI/CD", "Core bancario"])(
     "shows %s as text only when no official mark exists",
     (name) => {
       expect(iconFor(name)).toBeUndefined();

@@ -184,6 +184,8 @@ export const portfolioEs: Portfolio = {
     {
       name: "IA aplicada a QA",
       items: [
+        "Claude",
+        "Codex",
         "Revisión de pull requests con IA",
         "Análisis de tickets del sprint con IA",
         "IA aplicada a pruebas de software",
