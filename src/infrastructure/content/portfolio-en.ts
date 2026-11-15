@@ -180,6 +180,14 @@ export const portfolioEn: Portfolio = {
       items: ["JavaScript", "TypeScript", "SQL", "MongoDB", "Jira", "Confluence"],
     },
     {
+      name: "AI in QA",
+      items: [
+        "AI-assisted pull request review",
+        "AI-assisted sprint ticket analysis",
+        "AI applied to software testing",
+      ],
+    },
+    {
       name: "Banking domain",
       items: ["Core banking", "Temenos migration", "Instant payments", "FinTech"],
     },

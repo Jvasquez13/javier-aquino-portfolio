@@ -182,6 +182,14 @@ export const portfolioEs: Portfolio = {
       items: ["JavaScript", "TypeScript", "SQL", "MongoDB", "Jira", "Confluence"],
     },
     {
+      name: "IA aplicada a QA",
+      items: [
+        "Revisión de pull requests con IA",
+        "Análisis de tickets del sprint con IA",
+        "IA aplicada a pruebas de software",
+      ],
+    },
+    {
       name: "Dominio bancario",
       items: ["Core bancario", "Migración a Temenos", "Pagos instantáneos", "FinTech"],
     },
