@@ -1,6 +1,6 @@
 # Hi, I'm Javier Aquino
 
-**QA Lead & SDET** based in Santo Domingo, Dominican Republic.
+**QA Lead & Test Automation Engineer** based in Santo Domingo, Dominican Republic.
 
 🌐 **Portfolio:** [javieraquino.com](https://javieraquino.com) · 🇪🇸 [Leer en español](README.es.md)
 

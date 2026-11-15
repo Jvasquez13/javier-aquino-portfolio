@@ -31,9 +31,9 @@ export interface Dictionary {
 export const dictionaries: Record<Locale, Dictionary> = {
   es: {
     meta: {
-      title: "Javier Aquino | QA Lead y SDET",
+      title: "Javier Aquino | QA Lead y Test Automation Engineer",
       description:
-        "Portafolio de Javier Aquino, QA Lead y SDET en banca: automatización de APIs y servicios, QA móvil y pruebas de rendimiento.",
+        "Portafolio de Javier Aquino, QA Lead y Test Automation Engineer (SDET) en banca: automatización de APIs y servicios, QA móvil y pruebas de rendimiento.",
     },
     skip: "Ir al contenido",
     languageSwitch: "Idioma",    nav: {
@@ -64,7 +64,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     experience: { title: "Experiencia" },
     skills: { title: "Habilidades" },
     education: { title: "Formación", studies: "Estudios", certifications: "Certificaciones" },
-    contact: { title: "Contacto", lead: "Estoy abierto a oportunidades como QA Lead o SDET." },
+    contact: { title: "Contacto", lead: "Estoy abierto a oportunidades como QA Lead o Test Automation Engineer (SDET)." },
     gherkin: {
       language: "# language: es",
       feature: "Característica:",
@@ -81,9 +81,9 @@ export const dictionaries: Record<Locale, Dictionary> = {
   },
   en: {
     meta: {
-      title: "Javier Aquino | QA Lead & SDET",
+      title: "Javier Aquino | QA Lead & Test Automation Engineer",
       description:
-        "Portfolio of Javier Aquino, QA Lead and SDET in banking: API and service automation, mobile QA and performance testing.",
+        "Portfolio of Javier Aquino, QA Lead and Test Automation Engineer (SDET) in banking: API and service automation, mobile QA and performance testing.",
     },
     skip: "Skip to content",
     languageSwitch: "Language",    nav: {
@@ -114,7 +114,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     experience: { title: "Experience" },
     skills: { title: "Skills" },
     education: { title: "Education", studies: "Degrees", certifications: "Certifications" },
-    contact: { title: "Contact", lead: "I'm open to opportunities as a QA Lead or SDET." },
+    contact: { title: "Contact", lead: "I'm open to opportunities as a QA Lead or Test Automation Engineer (SDET)." },
     gherkin: {
       language: "# language: en",
       feature: "Feature:",

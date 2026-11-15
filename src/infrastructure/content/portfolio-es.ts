@@ -2,13 +2,13 @@ import type { Portfolio } from "@/domain/entities/portfolio";
 
 /**
  * Single source of truth for the site's content, taken from Javier's most recent CV
- * (QA Lead / SDET). Edit this file to change what the portfolio says; no component changes.
+ * (QA Lead & Test Automation Engineer). Edit this file to change what the portfolio says; no component changes.
  */
 export const portfolioEs: Portfolio = {
   profile: {
     fullName: "Javier Eduardo Aquino Vasquez",
     displayName: "Javier Aquino",
-    role: "QA Lead y SDET",
+    role: "QA Lead y Test Automation Engineer",
     headline:
       "Lidero el QA de una plataforma de pagos instantáneos en banca. Automatizo APIs con Karate y Playwright y mido rendimiento con K6 y JMeter.",
     about: [

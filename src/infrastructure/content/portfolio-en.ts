@@ -1,14 +1,14 @@
 import type { Portfolio } from "@/domain/entities/portfolio";
 
 /**
- * English content, taken from Javier's most recent CV (QA Lead / SDET).
+ * English content, taken from Javier's most recent CV (QA Lead & Test Automation Engineer).
  * Must stay structurally identical to portfolio-es.ts; a unit test enforces that.
  */
 export const portfolioEn: Portfolio = {
   profile: {
     fullName: "Javier Eduardo Aquino Vasquez",
     displayName: "Javier Aquino",
-    role: "QA Lead & SDET",
+    role: "QA Lead & Test Automation Engineer",
     headline:
       "I lead QA on an instant-payments platform in banking. I automate APIs with Karate and Playwright and measure performance with K6 and JMeter.",
     about: [

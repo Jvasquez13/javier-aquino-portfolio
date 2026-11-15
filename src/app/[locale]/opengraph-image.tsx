@@ -8,7 +8,7 @@ import { dictionaries } from "@/presentation/i18n/dictionary";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Javier Aquino, QA Lead & SDET";
+export const alt = "Javier Aquino, QA Lead & Test Automation Engineer";
 
 const COLORS = {
   bg: "#0a1020",
@@ -54,7 +54,7 @@ export default async function OpenGraphImage({ params }: { params: Promise<{ loc
             <div style={{ fontSize: 84, fontWeight: 800, lineHeight: 1.05, letterSpacing: -2 }}>
               {profile.displayName}
             </div>
-            <div style={{ fontSize: 38, fontWeight: 600, color: COLORS.accent, marginTop: 14 }}>
+            <div style={{ fontSize: 34, fontWeight: 600, color: COLORS.accent, marginTop: 14 }}>
               {profile.role}
             </div>
             <div style={{ fontSize: 25, color: "#cfd8ea", marginTop: 26, lineHeight: 1.4 }}>
