@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Instrument_Sans, JetBrains_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { isLocale, LOCALES } from "@/domain/entities/locale";
+import { SITE_URL } from "@/infrastructure/site-config";
 import { dictionaries } from "@/presentation/i18n/dictionary";
 import "../globals.css";
 
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) return {};
   const { meta } = dictionaries[locale];
   return {
-    metadataBase: new URL("https://javieraquino.com"),
+    metadataBase: new URL(SITE_URL),
     title: meta.title,
     description: meta.description,
     alternates: { canonical: `/${locale}`, languages: { es: "/es", en: "/en" } },

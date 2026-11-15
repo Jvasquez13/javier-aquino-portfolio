@@ -5,6 +5,7 @@ import { iconFor } from "./tool";
 describe("iconFor", () => {
   it.each([
     ["Docker", "docker"],
+    ["Bruno", "bruno"],
     ["Docker Compose", "docker"],
     ["Jenkins", "jenkins"],
     ["Appium", "appium"],

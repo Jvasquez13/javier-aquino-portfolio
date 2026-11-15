@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build:cv": "node scripts/build-cv.mjs",
+    "build:cv:private": "node scripts/build-cv.mjs --private"
   },
   "dependencies": {
     "next": "^16.4.6",
@@ -19,6 +21,7 @@
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "pdfkit": "^0.20.2",
     "typescript": "^5.9.0",
     "vitest": "^5.1.0"
   }

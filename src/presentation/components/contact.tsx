@@ -25,6 +25,18 @@ export function Contact({ profile, t }: { profile: Profile; t: Dictionary["conta
           );
         })}
       </ul>
+
+      <div className="cv-download">
+        <p className="cv-label">{t.downloadCv}</p>
+        <p className="hero-actions">
+          <a className="btn ghost" href={profile.cv.en} download>
+            {t.cvEnglish} (PDF)
+          </a>
+          <a className="btn ghost" href={profile.cv.es} download>
+            {t.cvSpanish} (PDF)
+          </a>
+        </p>
+      </div>
     </section>
   );
 }

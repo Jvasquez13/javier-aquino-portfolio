@@ -10,11 +10,12 @@ export const portfolioEn: Portfolio = {
     displayName: "Javier Aquino",
     role: "QA Lead & Test Automation Engineer",
     headline:
-      "I lead QA on an instant-payments platform in banking. I automate APIs with Karate and Playwright and measure performance with K6 and JMeter.",
+      "QA Lead on critical financial systems: I combine squad leadership with test automation, API testing and performance engineering.",
     about: [
-      "I'm QA Lead at Banco Popular Dominicano, the largest private bank in the Dominican Republic. I lead QA for TOKE, the first Zelle/Bizum-style instant payment platform launched in the country, and since late October 2026 I also directly own the automation role. Today I lead two manual QA engineers.",
-      "I have three years in high-impact banking systems. I started in December 2023 as a consultant on the core banking migration to Temenos; in April 2025 the bank hired me directly as Backend QA Engineer and later promoted me to QA Lead.",
-      "I work on API and service automation with Karate and Playwright, manual testing of native Android and iOS apps, performance testing with K6 and JMeter, and automated test execution in Jenkins pipelines.",
+      "QA Lead with three years of experience in high-impact banking and financial systems. I lead a QA squad on critical financial platforms, from test strategy and release readiness to hands-on automation.",
+      "My most significant work is TOKE, the first Zelle/Bizum-style instant payment platform launched in the Dominican Republic: a national-scale product built to bring previously unbanked people into the financial system. I lead one of its QA squads and work across backend and front-end, from the launch through its rapid early adoption.",
+      "My work combines team leadership with technical depth: API and service automation, end-to-end and mobile testing, performance engineering, and automated execution in CI/CD pipelines.",
+      "I began as a consultant on a core banking migration and was later hired directly by the bank, where I moved into QA leadership. I am completing a degree in Computer Science and Information Technology.",
     ],
     location: "Santo Domingo, Dominican Republic",
     availability: "Remote, on UTC-4 with a full workday of overlap with U.S. Eastern time.",
@@ -24,17 +25,18 @@ export const portfolioEn: Portfolio = {
       { label: "GitHub", url: "https://github.com/Jvasquez13" },
     ],
     photo: "/javier.jpg",
+    cv: { es: "/cv/Javier-Aquino-CV-ES.pdf", en: "/cv/Javier-Aquino-CV-EN.pdf" },
   },
 
   featuredScenario: {
     file: "release.feature",
-    feature: "Quality in instant payments",
-    name: "Prepare a release for production",
+    feature: "Software quality you can trust",
+    name: "Release a change to production",
     steps: [
-      { keyword: "Given", text: "regression automation runs on every build" },
-      { keyword: "When", text: "the QA team reviews the results" },
-      { keyword: "Then", text: "I sign off on release readiness" },
-      { keyword: "And", text: "defects are resolved before they reach production" },
+      { keyword: "Given", text: "critical flows are covered by automated regression" },
+      { keyword: "When", text: "the team reviews the results of every build" },
+      { keyword: "Then", text: "release readiness is approved with evidence" },
+      { keyword: "And", text: "defects are found before they reach production" },
     ],
   },
 
@@ -97,23 +99,39 @@ export const portfolioEn: Portfolio = {
 
   experience: [
     {
-      id: "popular",
+      id: "popular-lead",
       role: "QA Lead",
       company: "Banco Popular Dominicano",
       location: "Santo Domingo",
-      start: "2025-04",
+      start: "2026-04",
       end: null,
       context:
-        "Largest private bank in the Dominican Republic. Continuous engagement since December 2023: first as a contractor, hired directly in April 2025 as Backend QA Engineer and promoted to QA Lead.",
+        "Largest private bank in the Dominican Republic. QA Lead since April 2026.",
       highlights: [
-        "Lead the QA team on TOKE, the first Zelle/Bizum-style instant payment platform launched in the country, currently with two manual QA engineers reporting to me. I own test strategy, coverage planning, defect triage and release readiness sign-off.",
-        "Own release quality through the platform's launch and rapid early adoption at national scale, sustaining a low rate of production incidents across frequent releases under aggressive delivery timelines.",
-        "Own manual front-end QA for the native Android and iOS applications: functional, regression and exploratory testing across devices, OS versions and app store release candidates.",
-        "Since late October 2026, I directly own the team's automation role: I design and maintain API and service suites with Karate, executed on every build by Jenkins pipelines, and drive the rollout of Playwright to extend automated coverage to end-to-end flows.",
-        "Enforce pre-release regression gates across backend services and app store submissions, so the large majority of defects are resolved in the QA cycle and never reach production.",
-        "Take part in the team's adoption of AI-assisted tooling for pull request review and sprint ticket analysis, improving ticket quality before work reaches QA.",
-        "Run performance and load tests with K6 and JMeter, identifying bottlenecks under peak transaction volumes and giving scalability recommendations to engineering leadership.",
-        "Validate data integrity across services with SQL queries against banking databases and track defects in Jira in an Agile/Scrum environment.",
+        "Lead one of the QA squads on TOKE, an instant payments platform (Zelle/Bizum-style), with two manual QA engineers: define the test strategy, test plan and coverage, and triage defects.",
+        "Perform backend and front-end QA and take on initiatives beyond my squad.",
+        "Mentor around 5 QA colleagues on testing best practices and support them with the tools used at the bank.",
+        "Carry out manual functional, regression and exploratory testing on native Android and iOS apps across devices, OS versions and app store release candidates.",
+        "Since late October 2026, own front-end test automation with WebdriverIO and Appium for a cross-platform React Native business app from the TOKE product line.",
+        "Apply pre-release regression testing gates on backend services and app store submissions to detect defects within the QA cycle.",
+        "Run performance, load and stress testing with K6 and Apache JMeter (bottleneck analysis under peak transaction volumes).",
+        "Validate data with MongoDB queries.",
+        "Track defects in Jira in an Agile/Scrum environment and take part in the adoption of AI-assisted tooling for pull request review and sprint ticket analysis.",
+      ],
+    },
+    {
+      id: "popular-backend",
+      role: "QA Engineer",
+      company: "Banco Popular Dominicano",
+      location: "Santo Domingo",
+      start: "2025-04",
+      end: "2026-04",
+      context:
+        "Hired directly in April 2025, after working at the same bank as a consultant since December 2023. My work at the bank since then has been on TOKE.",
+      highlights: [
+        "Backend QA on TOKE: wrote and ran API and service-layer test cases, with traceability from requirement to defect closure.",
+        "On TOKE, built and maintained API and service test automation (API testing, REST) with Karate Framework, run on every build in Jenkins CI/CD pipelines.",
+        "Backend regression is automated for about 90% of the test cases of critical microservices.",
       ],
     },
     {
@@ -125,23 +143,21 @@ export const portfolioEn: Portfolio = {
       end: "2025-04",
       context: "Contractor on-site at Banco Popular Dominicano. Global digital consulting firm.",
       highlights: [
-        "Core QA contributor on Banco Popular's migration of its core banking system to the Temenos platform, one of the largest technology transformation programs in Dominican banking: I validated migrated services, data integrity and business continuity across legacy and Temenos environments.",
-        "Authored and maintained QA documentation across about 20 banking projects running in parallel: test plans, test cases, execution evidence and traceability matrices, the written baseline that auditors and delivery leads relied on.",
-        "Designed, executed and documented functional and regression test suites, keeping full traceability from requirement to defect closure in every test phase.",
-        "Coordinated and led test execution cycles, reporting defect metrics and release readiness to bank stakeholders and project leadership.",
-        "Improved documentation and traceability standards, which raised audit readiness and cut repeated test-design effort across releases.",
-        "Found defects earlier through structured, risk-based QA processes, and validated compliance with quality and regulatory standards in high-impact financial applications.",
-        "Sustained performance during the engagement led Banco Popular to hire me directly in April 2025, with no interruption on the same systems.",
+        "QA on the core banking migration to the Temenos platform: validated migrated services, data integrity and business continuity between legacy and Temenos environments.",
+        "Wrote and maintained QA documentation (test plans, test cases, execution evidence and traceability matrices) across multiple banking projects.",
+        "Created, ran and documented functional and regression test cases, with traceability from requirement to defect closure.",
+        "Coordinated test execution cycles and reported defects and progress to stakeholders.",
+        "Improved documentation and traceability standards, increasing audit readiness.",
       ],
     },
   ],
 
   skills: [
     {
-      name: "Automation",
+      name: "Test Automation",
       items: [
         "Karate (API and service automation)",
-        "Playwright",
+        "Playwright (back-office web app)",
         "WebDriverIO",
         "Appium",
         "BDD (Gherkin)",
@@ -150,18 +166,27 @@ export const portfolioEn: Portfolio = {
       ],
     },
     {
-      name: "CI/CD & DevOps",
-      items: ["Jenkins", "Docker", "Docker Compose", "Git", "Bitbucket", "CI/CD"],
+      name: "CI/CD & Tools",
+      items: [
+        "Jenkins",
+        "Docker (personal projects)",
+        "Docker Compose (personal projects)",
+        "Git",
+        "Bitbucket",
+        "CI/CD",
+        "Jira",
+        "Confluence",
+      ],
     },
     {
-      name: "APIs & backend",
-      items: ["REST", "Postman", "Swagger / OpenAPI", "Contract validation", "Microservices"],
+      name: "API & Backend Testing",
+      items: ["REST", "Postman", "Bruno", "Swagger / OpenAPI", "Contract validation", "Microservices"],
     },
     {
       name: "Mobile QA",
-      items: ["Android", "iOS", "Exploratory testing", "App store release validation"],
+      items: ["Android", "iOS", "React Native app testing", "Exploratory testing", "App store release validation"],
     },
-    { name: "Performance", items: ["K6", "Apache JMeter", "Load and stress testing"] },
+    { name: "Performance Testing", items: ["K6", "Apache JMeter", "Load and stress testing"] },
     {
       name: "QA leadership",
       items: ["Test strategy and planning", "Mentoring", "Defect triage", "Agile / Scrum"],
@@ -176,8 +201,8 @@ export const portfolioEn: Portfolio = {
       ],
     },
     {
-      name: "Languages & data",
-      items: ["JavaScript", "TypeScript", "SQL", "MongoDB", "Jira", "Confluence"],
+      name: "Languages & Data",
+      items: ["JavaScript", "TypeScript", "Java", "SQL", "MongoDB"],
     },
     {
       name: "AI in QA",
@@ -230,6 +255,7 @@ export const portfolioEn: Portfolio = {
       name: "Fundamentals of Software Testing",
       issuer: "International Association for Software Quality (AICS)",
       date: "2022-08",
+      logo: { src: "/logos/aics.png", plate: "light" },
     },
     {
       name: "Scrum Foundation Professional Certificate (SFPC)",

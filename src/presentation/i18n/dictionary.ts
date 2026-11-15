@@ -9,13 +9,14 @@ export interface Dictionary {
   skip: string;
   languageSwitch: string;
   nav: { about: string; projects: string; experience: string; skills: string; education: string; contact: string };
-  hero: { viewProjects: string; contactMe: string; toolsLabel: string };
+  hero: { status: string; viewProjects: string; viewExperience: string; contactMe: string; toolsLabel: string };
   about: { title: string; portraitAlt: (name: string) => string; location: string; availability: string; languages: string };
   projects: { title: string; note: (published: number, total: number) => string; status: Record<ProjectStatus, string>; viewCode: string };
   experience: { title: string };
   skills: { title: string };
   education: { title: string; studies: string; certifications: string };
-  contact: { title: string; lead: string };
+  contact: { title: string; lead: string; downloadCv: string; cvSpanish: string; cvEnglish: string };
+  cvNav: string;
   gherkin: {
     language: string;
     feature: string;
@@ -44,7 +45,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       education: "Formación",
       contact: "Contacto",
     },
-    hero: { viewProjects: "Ver proyectos", contactMe: "Contactar", toolsLabel: "Herramientas con las que trabajo" },
+    hero: {
+      status: "Disponible para oportunidades remotas",
+      viewProjects: "Ver proyectos",
+      viewExperience: "Ver experiencia",
+      contactMe: "Contactar",
+      toolsLabel: "Herramientas con las que trabajo",
+    },
     about: {
       title: "Sobre mí",
       portraitAlt: (name) => `Retrato de ${name}`,
@@ -64,7 +71,14 @@ export const dictionaries: Record<Locale, Dictionary> = {
     experience: { title: "Experiencia" },
     skills: { title: "Habilidades" },
     education: { title: "Formación", studies: "Estudios", certifications: "Certificaciones" },
-    contact: { title: "Contacto", lead: "Estoy abierto a oportunidades como QA Lead o Test Automation Engineer (SDET)." },
+    contact: {
+      title: "Contacto",
+      lead: "Estoy abierto a oportunidades como QA Lead o Test Automation Engineer (SDET).",
+      downloadCv: "Descargar CV",
+      cvSpanish: "Español",
+      cvEnglish: "English",
+    },
+    cvNav: "CV",
     gherkin: {
       language: "# language: es",
       feature: "Característica:",
@@ -94,7 +108,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       education: "Education",
       contact: "Contact",
     },
-    hero: { viewProjects: "View projects", contactMe: "Get in touch", toolsLabel: "Tools I work with" },
+    hero: {
+      status: "Open to remote opportunities",
+      viewProjects: "View projects",
+      viewExperience: "View experience",
+      contactMe: "Get in touch",
+      toolsLabel: "Tools I work with",
+    },
     about: {
       title: "About me",
       portraitAlt: (name) => `Portrait of ${name}`,
@@ -114,7 +134,14 @@ export const dictionaries: Record<Locale, Dictionary> = {
     experience: { title: "Experience" },
     skills: { title: "Skills" },
     education: { title: "Education", studies: "Degrees", certifications: "Certifications" },
-    contact: { title: "Contact", lead: "I'm open to opportunities as a QA Lead or Test Automation Engineer (SDET)." },
+    contact: {
+      title: "Contact",
+      lead: "I'm open to opportunities as a QA Lead or Test Automation Engineer (SDET).",
+      downloadCv: "Download CV",
+      cvSpanish: "Español",
+      cvEnglish: "English",
+    },
+    cvNav: "CV",
     gherkin: {
       language: "# language: en",
       feature: "Feature:",

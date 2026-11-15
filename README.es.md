@@ -4,14 +4,14 @@
 
 🌐 **Portafolio:** [javieraquino.com](https://javieraquino.com) · 🇬🇧 [Read in English](README.md)
 
-Lidero el QA en Banco Popular Dominicano, en TOKE, la primera plataforma de pagos instantáneos tipo Zelle/Bizum lanzada en República Dominicana. Empecé en 2023 como consultor en la migración del core bancario a Temenos, y después el banco me contrató directamente.
+Soy QA Lead en Banco Popular Dominicano, donde lidero uno de los squads de QA de TOKE, la primera plataforma de pagos instantáneos tipo Zelle/Bizum lanzada en República Dominicana. Empecé en 2023 como consultor en la migración del core bancario a Temenos, y después el banco me contrató directamente.
 
 Este repositorio es el código de mi portafolio personal.
 
 ## En qué trabajo
 
-- **Automatización de pruebas:** suites de APIs y servicios con Karate, flujos de extremo a extremo con Playwright, BDD con Gherkin.
-- **CI/CD:** ejecución automática de pruebas en pipelines de Jenkins, Docker y Docker Compose.
+- **Automatización de pruebas:** automatización de front-end con WebdriverIO y Appium, suites de APIs y servicios con Karate, BDD con Gherkin.
+- **CI/CD:** ejecución automática de pruebas en pipelines de Jenkins; Docker y Docker Compose en mis proyectos personales.
 - **QA móvil:** pruebas funcionales, de regresión y exploratorias, de forma manual, en apps nativas de Android e iOS.
 - **Rendimiento:** pruebas de carga y estrés con K6 y Apache JMeter.
 - **Liderazgo de calidad:** estrategia de pruebas, triage de defectos, preparación de releases y mentoría.

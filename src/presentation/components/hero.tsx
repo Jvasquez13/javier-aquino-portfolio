@@ -19,6 +19,10 @@ export function Hero({
   return (
     <section id="inicio" className="hero">
       <div className="hero-copy">
+        <p className="status-pill">
+          <span className="status-dot" aria-hidden="true" />
+          {t.hero.status}
+        </p>
         <h1>
           {profile.displayName}
           <span className="role">{profile.role}</span>
@@ -26,6 +30,7 @@ export function Hero({
         <p className="lead">{profile.headline}</p>
         <p className="hero-actions">
           <a className="btn" href="#proyectos">{t.hero.viewProjects}</a>
+          <a className="btn ghost" href="#experiencia">{t.hero.viewExperience}</a>
           <a className="btn ghost" href="#contacto">{t.hero.contactMe}</a>
         </p>
       </div>

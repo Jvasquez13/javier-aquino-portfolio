@@ -26,8 +26,10 @@ export function About({
           />
         </figure>
         <div className="about-text">
-          {profile.about.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
+          {profile.about.map((paragraph, index) => (
+            <p key={paragraph} className={index === 0 ? "about-lead" : undefined}>
+              {paragraph}
+            </p>
           ))}
           <dl className="facts">
             <div>

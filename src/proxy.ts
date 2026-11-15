@@ -14,4 +14,5 @@ export function proxy(request: NextRequest) {
   return NextResponse.redirect(url);
 }
 
-export const config = { matcher: ["/((?!_next|.*\\..*).*)"] };
+// Skip Next internals, anything with a file extension, and the generated icon routes (/icon, /apple-icon).
+export const config = { matcher: ["/((?!_next|icon|apple-icon|.*\\..*).*)"] };

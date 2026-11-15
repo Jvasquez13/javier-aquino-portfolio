@@ -10,11 +10,14 @@ export function TopNav({
   items,
   locale,
   languageLabel,
+  cv,
 }: {
   brand: string;
   items: readonly NavItem[];
   locale: Locale;
   languageLabel: string;
+  /** Link to the CV in the current page language. */
+  cv: { label: string; href: string };
 }) {
   return (
     <header className="topbar">
@@ -28,6 +31,11 @@ export function TopNav({
               <a href={`#${id}`}>{label}</a>
             </li>
           ))}
+          <li>
+            <a className="nav-cv" href={cv.href} download>
+              {cv.label}
+            </a>
+          </li>
         </ul>
         <ul className="lang" aria-label={languageLabel}>
           {LOCALES.map((code) => (

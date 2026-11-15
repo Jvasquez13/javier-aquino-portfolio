@@ -15,4 +15,6 @@ export interface Profile {
   readonly links: readonly Link[];
   /** Path under /public */
   readonly photo: string;
+  /** Downloadable CV (PDF) per language, paths under /public. */
+  readonly cv: { readonly es: string; readonly en: string };
 }

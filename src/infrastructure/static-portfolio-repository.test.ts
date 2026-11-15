@@ -60,6 +60,14 @@ describe.each(LOCALES)("portfolio content (%s)", (locale) => {
     }
   });
 
+  it("links CV files that exist in /public", async () => {
+    const { profile } = await load(locale);
+    for (const src of [profile.cv.es, profile.cv.en]) {
+      expect(src.endsWith(".pdf")).toBe(true);
+      expect(existsSync(path.join(process.cwd(), "public", src)), `${src} is missing; run npm run build:cv`).toBe(true);
+    }
+  });
+
   it("does not claim a project is published without a repository", async () => {
     const { projects } = await load(locale);
     const publishedWithoutRepo = projects.filter((p) => p.status === "pass" && !p.repoUrl);

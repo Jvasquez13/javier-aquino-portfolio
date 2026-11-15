@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { summarizeProjects } from "@/application/summarize-projects";
 import { isLocale } from "@/domain/entities/locale";
 import { getPortfolio } from "@/infrastructure/container";
+import { pageUrl, SITE_URL } from "@/infrastructure/site-config";
+import { buildPersonJsonLd, serializeJsonLd } from "@/presentation/seo/person-json-ld";
 import { dictionaries } from "@/presentation/i18n/dictionary";
 import { About } from "@/presentation/components/about";
 import { Contact } from "@/presentation/components/contact";
@@ -31,8 +33,20 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(buildPersonJsonLd(portfolio, SITE_URL, pageUrl(locale))),
+        }}
+      />
       <a className="skip" href="#contenido">{t.skip}</a>
-      <TopNav brand={portfolio.profile.displayName} items={nav} locale={locale} languageLabel={t.languageSwitch} />
+      <TopNav
+        brand={portfolio.profile.displayName}
+        items={nav}
+        locale={locale}
+        languageLabel={t.languageSwitch}
+        cv={{ label: t.cvNav, href: portfolio.profile.cv[locale] }}
+      />
       <main id="contenido">
         <Hero profile={portfolio.profile} scenario={portfolio.featuredScenario} tools={portfolio.featuredTools} t={t} />
         <About profile={portfolio.profile} languages={portfolio.languages} t={t.about} />
